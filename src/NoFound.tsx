@@ -1,5 +1,4 @@
-import React from "react";
-import "./Styles/NoFound.css";
+import "./NoFound.css";
 import { useNavigate } from "react-router-dom";
 function PageNoFound() {
   const Back = useNavigate();
