@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles/global.css";
 import AppContainer from "./components/AppContainer";
 import PageNoFound from "./NoFound";
@@ -23,7 +23,7 @@ export function DynamicTitleWrapper({ Component, title }: DynamicProps) {
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<AppContainer />} />
           <Route
@@ -46,7 +46,7 @@ function App() {
           />
           <Route path="*" element={<PageNoFound />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
