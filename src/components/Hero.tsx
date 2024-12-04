@@ -5,7 +5,7 @@ import { WhatSappLink } from "./Utils/Links/WhatSapp";
 export function Hero() {
   const onButtonClicked = () => {
     const msg = `Bonjours NEHONIX, j'ai un projet et je veux que vous m'aidiez à le réaliser. `;
-    const phone = "2250142823399";
+    const phone = "2250712137266";
     const prepareLink = `${WhatSappLink}phone=${phone}&text=${msg}&type=phone_number&app_absent=0`;
     window.open(prepareLink);
   };
@@ -22,6 +22,17 @@ export function Hero() {
         <button onClick={onButtonClicked} className="button">
           Nous contacter
         </button>
+
+        <button
+          style={{ backgroundColor: "green" }}
+          onClick={() =>
+            window.open("https://www.nehonix.space/doc/regulations/fullStack")
+          }
+          className="button"
+        >
+          Nos Formations
+        </button>
+
         <div className="scroll-indicator">
           <ChevronDown size={32} />
         </div>
