@@ -1,1 +1,0 @@
-export const WhatSappLink = "https://api.whatsapp.com/send/?";
