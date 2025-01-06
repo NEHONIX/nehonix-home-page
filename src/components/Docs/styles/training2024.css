@@ -1,0 +1,143 @@
+.training-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.training-title {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confidentiality-notice {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.training-section {
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.training-section:hover {
+  transform: translateY(-2px);
+}
+
+.training-section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.subsection {
+  margin-bottom: 2rem;
+}
+
+.subsection h3 {
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.training-section ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.training-section ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.training-section ul li:before {
+  content: "•";
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.curriculum-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.track-card {
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.track-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.track-card ul {
+  margin-top: 1rem;
+}
+
+.track-card li {
+  margin-bottom: 0.8rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.track-card li:before {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .training-container {
+    padding: 1rem;
+  }
+  
+  .training-title {
+    font-size: 2rem;
+  }
+  
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .track-card {
+    margin-bottom: 1rem;
+  }
+}

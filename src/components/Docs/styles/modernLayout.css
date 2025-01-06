@@ -1,0 +1,82 @@
+.modern-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+  position: relative;
+}
+
+.modern-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modern-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.modern-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.modern-subtitle {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.modern-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.modern-list {
+  list-style: none;
+  padding: 0;
+}
+
+.modern-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.modern-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .modern-content {
+    padding: 1rem;
+  }
+
+  .modern-title {
+    font-size: 2rem;
+  }
+
+  .modern-section {
+    padding: 1.5rem;
+  }
+}

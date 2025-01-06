@@ -1,0 +1,90 @@
+.app-container {
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Glassmorphism effect for sections */
+.content-wrapper section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-wrapper section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling */
+.content-wrapper h1,
+.content-wrapper h2,
+.content-wrapper h3 {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Button styling */
+.content-wrapper button {
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content-wrapper button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Hide Features and About initially */
+.content-wrapper > *:not(:first-child) {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show Features and About when scrolled into view */
+.content-wrapper > *.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+  
+  .content-wrapper section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+}

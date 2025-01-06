@@ -1,42 +1,39 @@
-import { ChevronDown } from "lucide-react";
-import "../styles/Hero.css";
-import { WhatSappLink } from "./Utils/Links/WhatSapp";
+import React from 'react';
+import "./styles/Hero.css";
 
 export function Hero() {
   const onButtonClicked = () => {
     const msg = `Bonjours NEHONIX, j'ai un projet et je veux que vous m'aidiez à le réaliser. `;
     const phone = "2250712137266";
-    const prepareLink = `${WhatSappLink}phone=${phone}&text=${msg}&type=phone_number&app_absent=0`;
+    const prepareLink = `https://wa.me/${phone}?text=${msg}`;
     window.open(prepareLink);
   };
   return (
-    <div className="hero">
-      <div className="hero-background" />
+    <section className="hero-section">
       <div className="hero-content">
         <img src="/logo.png" alt="NEHONIX" className="hero-logo" />
-        <h1 className="hero-title">Bienvenue chez NEHONIX</h1>
-        <p className="hero-description">
-          La nouvelle génération d'écosystèmes numériques conçus pour repousser
-          les limites de l'innovation
+        <h1>Bienvenue chez NEHONIX</h1>
+        <p className="hero-subtitle">
+          La nouvelle génération d'écosystèmes numériques conçus pour repousser les limites de l'innovation
         </p>
-        <button onClick={onButtonClicked} className="button">
-          Nous contacter
-        </button>
-
-        <button
-          style={{ backgroundColor: "green" }}
-          onClick={() =>
-            window.open("https://www.nehonix.space/doc/regulations/fullStack")
-          }
-          className="button"
-        >
-          Nos Formations
-        </button>
-
+        <div className="hero-buttons">
+          <button onClick={onButtonClicked} className="primary-button">NOUS CONTACTER</button>
+          <button 
+            onClick={() =>
+              window.open("/doc/training/2024")
+            } 
+            className="secondary-button"
+          >
+            FORMATION 2024-2026
+          </button>
+        </div>
         <div className="scroll-indicator">
-          <ChevronDown size={32} />
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+          <div className="arrow"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

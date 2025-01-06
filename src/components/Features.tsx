@@ -1,46 +1,59 @@
-import { Brain, Shield, Zap, Users } from 'lucide-react';
-import '../styles/Features.css';
+import React from 'react';
+import './styles/Features.css';
+import { Code, Cpu, Globe, Rocket, Shield, Users } from 'lucide-react';
 
 const features = [
   {
-    icon: Brain,
-    title: "Intelligence de pointe",
-    description: "Intégration d'algorithmes intelligents pour simplifier vos processus"
+    icon: <Globe size={32} />,
+    title: "Solutions Web Innovantes",
+    description: "Développement d'applications web modernes et performantes avec les dernières technologies."
   },
   {
-    icon: Shield,
-    title: "Sécurité avant tout",
-    description: "Protection de vos données grâce à des solutions robustes et fiables"
+    icon: <Shield size={32} />,
+    title: "Sécurité Renforcée",
+    description: "Protection avancée de vos données et systèmes avec les meilleures pratiques de sécurité."
   },
   {
-    icon: Zap,
-    title: "Efficacité optimisée",
-    description: "Maximisez votre performance tout en minimisant la complexité"
+    icon: <Code size={32} />,
+    title: "Développement Sur Mesure",
+    description: "Solutions personnalisées adaptées à vos besoins spécifiques et objectifs business."
   },
   {
-    icon: Users,
-    title: "Expérience unique",
-    description: "Des outils personnalisés et un accompagnement sur mesure pour répondre à vos besoins"
+    icon: <Users size={32} />,
+    title: "Formation Professionnelle",
+    description: "Programmes de formation intensifs pour développeurs et professionnels du numérique."
+  },
+  {
+    icon: <Cpu size={32} />,
+    title: "Intelligence Artificielle",
+    description: "Intégration de solutions IA avancées pour optimiser vos processus."
+  },
+  {
+    icon: <Rocket size={32} />,
+    title: "Innovation Continue",
+    description: "Veille technologique et adoption des dernières innovations du marché."
   }
 ];
 
 export function Features() {
   return (
-    <div className="features">
-      <div className="container">
-        <h2 className="features-title">
-          Pourquoi NEHONIX ?
-        </h2>
-        <div className="features-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <feature.icon className="feature-icon" />
-              <h3 className="feature-title">{feature.title}</h3>
-              <p className="feature-description">{feature.description}</p>
-            </div>
-          ))}
-        </div>
+    <section className="features-section">
+      <div className="features-header">
+        <h2>Nos Services</h2>
+        <p>Découvrez notre gamme complète de solutions numériques innovantes</p>
       </div>
-    </div>
+      
+      <div className="features-grid">
+        {features.map((feature, index) => (
+          <div className="feature-card" key={index}>
+            <div className="feature-icon">
+              {feature.icon}
+            </div>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
