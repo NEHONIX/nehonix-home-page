@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Environment, PerspectiveCamera, Sparkles } from "@react-three/drei";
 import FloatingLogo from "./FloatingLogo";
 import AnimatedSphere from "./AnimateSphere";
