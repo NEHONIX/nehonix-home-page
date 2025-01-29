@@ -17,7 +17,7 @@ export function HomeScene() {
     >
       <PerspectiveCamera makeDefault position={[0, 0, 10]} />
 
-      <color attach="background" args={["#000"]} />
+      <color attach="background" args={["#183c6f"]} />
 
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} intensity={1} />

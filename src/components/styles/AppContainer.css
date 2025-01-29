@@ -41,7 +41,9 @@
 
 /* Button styling */
 .content-wrapper button {
-  background: linear-gradient(45deg, #3498db, #2ecc71);
+  /* background: linear-gradient(45deg, #3498db, #2ecc71); */
+ background-color: #34a9db;
+  /* background: linear-gradient(45deg, #3498db, #2ecc71); */
   border: none;
   padding: 1rem 2rem;
   color: white;

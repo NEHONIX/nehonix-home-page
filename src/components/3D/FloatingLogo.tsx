@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import {  useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { Float, MeshDistortMaterial, Text } from "@react-three/drei";
 import * as THREE from "three";
 
@@ -22,7 +22,7 @@ export default function FloatingLogo() {
       floatingRange={[0, 0.5]}
     >
       <Text
-        fontSize={1.5}
+        fontSize={1}
         maxWidth={200}
         lineHeight={1}
         letterSpacing={0.02}
@@ -33,7 +33,7 @@ export default function FloatingLogo() {
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
       >
-        NEHONIX
+        NEHONIX.space
         <MeshDistortMaterial
           color={hovered ? "#00ff88" : "#3498db"}
           envMapIntensity={1}

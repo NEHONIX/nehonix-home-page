@@ -3,9 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   color: #333;
-  background: rgba(255, 255, 255, 0.95);
+  /* color: white; */
+  background: #87c0d8;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #04f8d4;
 }
 
 .training-title {
@@ -31,12 +32,14 @@
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(159, 161, 163, 0.1);
   transition: transform 0.3s ease;
 }
 
 .training-section:hover {
   transform: translateY(-2px);
+  transform: scale(0.98);
 }
 
 .training-section h2 {
@@ -128,15 +131,15 @@
   .training-container {
     padding: 1rem;
   }
-  
+
   .training-title {
     font-size: 2rem;
   }
-  
+
   .curriculum-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .track-card {
     margin-bottom: 1rem;
   }

@@ -67,13 +67,18 @@
   overflow: hidden;
 }
 
+/* .secondary-button {
+ background-color: #34a9db;
+} */
+
 .primary-button {
   background: linear-gradient(45deg, #3498db, #2ecc71);
   color: white;
 }
 
 .secondary-button {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+ background-color: #34a9db;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
